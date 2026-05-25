@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f0a1a"/>
+      <stop offset="50%" stop-color="#1a1035"/>
+      <stop offset="100%" stop-color="#0d1520"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <filter id="blur1">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+    <filter id="blur2">
+      <feGaussianBlur stdDeviation="25"/>
+    </filter>
+    <filter id="textshadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#6366f1" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="300" fill="url(#bg)"/>
+
+  <!-- Ambient glow orbs -->
+  <circle cx="150" cy="80" r="120" fill="#6366f1" opacity="0.08" filter="url(#blur1)"/>
+  <circle cx="750" cy="220" r="100" fill="#7c3aed" opacity="0.06" filter="url(#blur1)"/>
+  <circle cx="450" cy="150" r="80" fill="#818cf8" opacity="0.05" filter="url(#blur2)"/>
+
+  <!-- Grid pattern -->
+  <g stroke="#818cf8" stroke-width="0.3" opacity="0.08">
+    <line x1="0" y1="60" x2="900" y2="60"/>
+    <line x1="0" y1="120" x2="900" y2="120"/>
+    <line x1="0" y1="180" x2="900" y2="180"/>
+    <line x1="0" y1="240" x2="900" y2="240"/>
+    <line x1="150" y1="0" x2="150" y2="300"/>
+    <line x1="300" y1="0" x2="300" y2="300"/>
+    <line x1="450" y1="0" x2="450" y2="300"/>
+    <line x1="600" y1="0" x2="600" y2="300"/>
+    <line x1="750" y1="0" x2="750" y2="300"/>
+  </g>
+
+  <!-- Decorative node dots -->
+  <circle cx="150" cy="120" r="3" fill="#6366f1" opacity="0.4"/>
+  <circle cx="300" cy="60" r="2.5" fill="#818cf8" opacity="0.3"/>
+  <circle cx="450" cy="180" r="3" fill="#7c3aed" opacity="0.35"/>
+  <circle cx="600" cy="120" r="2.5" fill="#a78bfa" opacity="0.3"/>
+  <circle cx="750" cy="240" r="3" fill="#6366f1" opacity="0.4"/>
+  <circle cx="300" cy="240" r="2" fill="#818cf8" opacity="0.25"/>
+  <circle cx="600" cy="60" r="2" fill="#7c3aed" opacity="0.25"/>
+
+  <!-- Connecting lines between nodes -->
+  <g stroke="url(#accent)" stroke-width="0.8" opacity="0.12">
+    <line x1="150" y1="120" x2="300" y2="60"/>
+    <line x1="300" y1="60" x2="450" y2="180"/>
+    <line x1="450" y1="180" x2="600" y2="120"/>
+    <line x1="600" y1="120" x2="750" y2="240"/>
+    <line x1="300" y1="240" x2="450" y2="180"/>
+    <line x1="600" y1="60" x2="750" y2="240"/>
+  </g>
+
+  <!-- Agent icon (brain/circuit) -->
+  <g transform="translate(370, 70)">
+    <rect x="0" y="0" width="36" height="36" rx="8" fill="none" stroke="url(#glow)" stroke-width="1.5" opacity="0.6"/>
+    <circle cx="18" cy="18" r="6" fill="none" stroke="#a78bfa" stroke-width="1.2"/>
+    <circle cx="18" cy="18" r="2" fill="#a78bfa"/>
+    <line x1="18" y1="12" x2="18" y2="4" stroke="#818cf8" stroke-width="1"/>
+    <line x1="18" y1="24" x2="18" y2="32" stroke="#818cf8" stroke-width="1"/>
+    <line x1="12" y1="18" x2="4" y2="18" stroke="#818cf8" stroke-width="1"/>
+    <line x1="24" y1="18" x2="32" y2="18" stroke="#818cf8" stroke-width="1"/>
+    <circle cx="18" cy="4" r="1.5" fill="#6366f1"/>
+    <circle cx="18" cy="32" r="1.5" fill="#6366f1"/>
+    <circle cx="4" cy="18" r="1.5" fill="#6366f1"/>
+    <circle cx="32" cy="18" r="1.5" fill="#6366f1"/>
+  </g>
+
+  <!-- Title -->
+  <text x="450" y="155" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="32" font-weight="700" fill="#f1f0f9" filter="url(#textshadow)" letter-spacing="-0.5">
+    Agentic Research Analyst
+  </text>
+
+  <!-- Subtitle -->
+  <text x="450" y="185" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#a5b4c8" letter-spacing="0.5">
+    Multi-tool LLM agent  ·  LangGraph  ·  Plan → Search → Analyse → Draft → Review
+  </text>
+
+  <!-- Metric badges -->
+  <g transform="translate(195, 215)">
+    <!-- Badge 1 -->
+    <rect x="0" y="0" width="140" height="34" rx="17" fill="#6366f1" fill-opacity="0.12" stroke="#6366f1" stroke-width="0.8" stroke-opacity="0.3"/>
+    <text x="70" y="15" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#a5b4c8" letter-spacing="0.5">TASK COMPLETION</text>
+    <text x="70" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#818cf8">87%</text>
+  </g>
+  <g transform="translate(370, 215)">
+    <!-- Badge 2 -->
+    <rect x="0" y="0" width="140" height="34" rx="17" fill="#7c3aed" fill-opacity="0.12" stroke="#7c3aed" stroke-width="0.8" stroke-opacity="0.3"/>
+    <text x="70" y="15" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#a5b4c8" letter-spacing="0.5">AVG TOOL CALLS</text>
+    <text x="70" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#a78bfa">6.3</text>
+  </g>
+  <g transform="translate(545, 215)">
+    <!-- Badge 3 -->
+    <rect x="0" y="0" width="140" height="34" rx="17" fill="#10b981" fill-opacity="0.12" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.3"/>
+    <text x="70" y="15" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#a5b4c8" letter-spacing="0.5">COST / BRIEF</text>
+    <text x="70" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#34d399">$0.18</text>
+  </g>
+
+  <!-- Bottom accent line -->
+  <rect x="300" y="270" width="300" height="1.5" rx="1" fill="url(#accent)" opacity="0.25"/>
+</svg>

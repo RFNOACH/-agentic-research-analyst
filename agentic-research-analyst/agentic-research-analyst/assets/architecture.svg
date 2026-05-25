@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f0a1a"/>
+      <stop offset="100%" stop-color="#0d1520"/>
+    </linearGradient>
+    <linearGradient id="nodeStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <linearGradient id="toolStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="8" markerHeight="6" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6366f1" opacity="0.6"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="8" markerHeight="6" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#10b981" opacity="0.6"/>
+    </marker>
+    <marker id="arrowOrange" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="8" markerHeight="6" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f59e0b" opacity="0.6"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="520" fill="url(#bg)"/>
+
+  <!-- Grid -->
+  <g stroke="#818cf8" stroke-width="0.2" opacity="0.06">
+    <line x1="0" y1="100" x2="900" y2="100"/><line x1="0" y1="200" x2="900" y2="200"/>
+    <line x1="0" y1="300" x2="900" y2="300"/><line x1="0" y1="400" x2="900" y2="400"/>
+    <line x1="180" y1="0" x2="180" y2="520"/><line x1="360" y1="0" x2="360" y2="520"/>
+    <line x1="540" y1="0" x2="540" y2="520"/><line x1="720" y1="0" x2="720" y2="520"/>
+  </g>
+
+  <!-- Title -->
+  <text x="450" y="38" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="600" fill="#e2e0ef" letter-spacing="0.3">Agent Pipeline Architecture</text>
+
+  <!-- ═══ MAIN PIPELINE NODES ═══ -->
+
+  <!-- Node: User Brief (input) -->
+  <g transform="translate(60, 80)">
+    <rect width="120" height="50" rx="10" fill="#6366f1" fill-opacity="0.08" stroke="url(#nodeStroke)" stroke-width="1.2"/>
+    <text x="60" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#a5b4c8">INPUT</text>
+    <text x="60" y="37" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#c7d2fe">User Brief</text>
+  </g>
+
+  <!-- Node: Planner -->
+  <g transform="translate(250, 80)">
+    <rect width="120" height="50" rx="10" fill="#6366f1" fill-opacity="0.1" stroke="url(#nodeStroke)" stroke-width="1.2"/>
+    <text x="60" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#a5b4c8">NODE 1</text>
+    <text x="60" y="37" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#c7d2fe">Planner</text>
+  </g>
+
+  <!-- Node: Gatherer -->
+  <g transform="translate(440, 80)">
+    <rect width="120" height="50" rx="10" fill="#6366f1" fill-opacity="0.1" stroke="url(#nodeStroke)" stroke-width="1.2"/>
+    <text x="60" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#a5b4c8">NODE 2</text>
+    <text x="60" y="37" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#c7d2fe">Gatherer</text>
+  </g>
+
+  <!-- Node: Analyzer -->
+  <g transform="translate(440, 190)">
+    <rect width="120" height="50" rx="10" fill="#6366f1" fill-opacity="0.1" stroke="url(#nodeStroke)" stroke-width="1.2"/>
+    <text x="60" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#a5b4c8">NODE 3</text>
+    <text x="60" y="37" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#c7d2fe">Analyzer</text>
+  </g>
+
+  <!-- Node: Drafter -->
+  <g transform="translate(630, 190)">
+    <rect width="120" height="50" rx="10" fill="#6366f1" fill-opacity="0.1" stroke="url(#nodeStroke)" stroke-width="1.2"/>
+    <text x="60" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#a5b4c8">NODE 4</text>
+    <text x="60" y="37" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#c7d2fe">Drafter</text>
+  </g>
+
+  <!-- Node: Reviewer -->
+  <g transform="translate(630, 80)">
+    <rect width="120" height="50" rx="10" fill="#7c3aed" fill-opacity="0.12" stroke="#a78bfa" stroke-width="1.2"/>
+    <text x="60" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#a5b4c8">NODE 5</text>
+    <text x="60" y="37" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#d8b4fe">Reviewer</text>
+  </g>
+
+  <!-- Node: Output -->
+  <g transform="translate(800, 80)">
+    <rect width="80" height="50" rx="10" fill="#10b981" fill-opacity="0.1" stroke="url(#toolStroke)" stroke-width="1.2"/>
+    <text x="40" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#86efac">OUTPUT</text>
+    <text x="40" y="37" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#34d399">Memo</text>
+  </g>
+
+  <!-- ═══ FLOW ARROWS ═══ -->
+  <line x1="180" y1="105" x2="245" y2="105" stroke="#6366f1" stroke-width="1.2" opacity="0.5" marker-end="url(#arrow)"/>
+  <line x1="370" y1="105" x2="435" y2="105" stroke="#6366f1" stroke-width="1.2" opacity="0.5" marker-end="url(#arrow)"/>
+  <line x1="500" y1="130" x2="500" y2="185" stroke="#6366f1" stroke-width="1.2" opacity="0.5" marker-end="url(#arrow)"/>
+  <line x1="560" y1="215" x2="625" y2="215" stroke="#6366f1" stroke-width="1.2" opacity="0.5" marker-end="url(#arrow)"/>
+  <line x1="690" y1="190" x2="690" y2="135" stroke="#6366f1" stroke-width="1.2" opacity="0.5" marker-end="url(#arrow)"/>
+  <line x1="750" y1="105" x2="795" y2="105" stroke="#10b981" stroke-width="1.2" opacity="0.5" marker-end="url(#arrowGreen)"/>
+
+  <!-- Revision loop arrow (Reviewer → Gatherer) -->
+  <path d="M 630 95 Q 580 60 560 75 Q 540 60 500 75" stroke="#f59e0b" stroke-width="1" stroke-dasharray="5,3" opacity="0.5" fill="none" marker-end="url(#arrowOrange)"/>
+  <text x="560" y="55" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#fbbf24" opacity="0.7">revision loop (max 2)</text>
+
+  <!-- ═══ TOOL NODES ═══ -->
+  <g transform="translate(100, 310)">
+    <rect width="150" height="170" rx="12" fill="#10b981" fill-opacity="0.04" stroke="url(#toolStroke)" stroke-width="0.8" stroke-dasharray="4,3"/>
+    <text x="75" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#6ee7b7" letter-spacing="0.5">TOOL SUITE</text>
+
+    <!-- Tool items -->
+    <g transform="translate(15, 38)">
+      <rect width="120" height="24" rx="6" fill="#10b981" fill-opacity="0.08"/>
+      <text x="12" y="16" font-family="system-ui, sans-serif" font-size="10" fill="#86efac">🔍 Web Search</text>
+    </g>
+    <g transform="translate(15, 68)">
+      <rect width="120" height="24" rx="6" fill="#10b981" fill-opacity="0.08"/>
+      <text x="12" y="16" font-family="system-ui, sans-serif" font-size="10" fill="#86efac">📄 PDF Reader</text>
+    </g>
+    <g transform="translate(15, 98)">
+      <rect width="120" height="24" rx="6" fill="#10b981" fill-opacity="0.08"/>
+      <text x="12" y="16" font-family="system-ui, sans-serif" font-size="10" fill="#86efac">⚙️ Code Executor</text>
+    </g>
+    <g transform="translate(15, 128)">
+      <rect width="120" height="24" rx="6" fill="#10b981" fill-opacity="0.08"/>
+      <text x="12" y="16" font-family="system-ui, sans-serif" font-size="10" fill="#86efac">🗃️ Vector Store</text>
+    </g>
+  </g>
+
+  <!-- Tool connection line -->
+  <path d="M 400 130 Q 300 250 200 305" stroke="#10b981" stroke-width="0.8" stroke-dasharray="4,3" opacity="0.3" fill="none" marker-end="url(#arrowGreen)"/>
+  <text x="280" y="230" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#6ee7b7" opacity="0.6">tool calls</text>
+
+  <!-- ═══ EVAL FRAMEWORK ═══ -->
+  <g transform="translate(350, 310)">
+    <rect width="220" height="170" rx="12" fill="#f59e0b" fill-opacity="0.04" stroke="#f59e0b" stroke-width="0.8" stroke-dasharray="4,3"/>
+    <text x="110" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#fcd34d" letter-spacing="0.5">EVALUATION SUITE</text>
+
+    <g transform="translate(15, 38)">
+      <rect width="190" height="24" rx="6" fill="#f59e0b" fill-opacity="0.06"/>
+      <text x="12" y="16" font-family="system-ui, sans-serif" font-size="10" fill="#fcd34d">📊 13 briefs × 4 domains</text>
+    </g>
+    <g transform="translate(15, 68)">
+      <rect width="190" height="24" rx="6" fill="#f59e0b" fill-opacity="0.06"/>
+      <text x="12" y="16" font-family="system-ui, sans-serif" font-size="10" fill="#fcd34d">🧑‍⚖️ 3 LLM-as-Judge scorers</text>
+    </g>
+    <g transform="translate(15, 98)">
+      <rect width="190" height="24" rx="6" fill="#f59e0b" fill-opacity="0.06"/>
+      <text x="12" y="16" font-family="system-ui, sans-serif" font-size="10" fill="#fcd34d">📈 Regression detection</text>
+    </g>
+    <g transform="translate(15, 128)">
+      <rect width="190" height="24" rx="6" fill="#f59e0b" fill-opacity="0.06"/>
+      <text x="12" y="16" font-family="system-ui, sans-serif" font-size="10" fill="#fcd34d">🔁 Variance tracking</text>
+    </g>
+  </g>
+
+  <!-- ═══ STATE BOX ═══ -->
+  <g transform="translate(650, 310)">
+    <rect width="200" height="170" rx="12" fill="#6366f1" fill-opacity="0.04" stroke="#6366f1" stroke-width="0.8" stroke-dasharray="4,3"/>
+    <text x="100" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#a5b4fc" letter-spacing="0.5">AGENT STATE</text>
+
+    <g transform="translate(12, 36)">
+      <text x="0" y="14" font-family="monospace" font-size="9.5" fill="#818cf8">brief: str</text>
+      <text x="0" y="30" font-family="monospace" font-size="9.5" fill="#818cf8">plan: TaskPlan</text>
+      <text x="0" y="46" font-family="monospace" font-size="9.5" fill="#818cf8">gathered: list[dict]</text>
+      <text x="0" y="62" font-family="monospace" font-size="9.5" fill="#818cf8">analysis: str</text>
+      <text x="0" y="78" font-family="monospace" font-size="9.5" fill="#818cf8">memo: ResearchMemo</text>
+      <text x="0" y="94" font-family="monospace" font-size="9.5" fill="#818cf8">tool_trace: list</text>
+      <text x="0" y="110" font-family="monospace" font-size="9.5" fill="#818cf8">revision_count: int</text>
+      <text x="0" y="126" font-family="monospace" font-size="9.5" fill="#818cf8">metadata: dict</text>
+    </g>
+  </g>
+
+  <!-- State connection -->
+  <path d="M 750 295 Q 750 280 710 250" stroke="#6366f1" stroke-width="0.6" stroke-dasharray="3,3" opacity="0.25" fill="none"/>
+
+  <!-- Footer -->
+  <text x="450" y="508" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#64748b">github.com/RFNOACH/agentic-research-analyst</text>
+</svg>
