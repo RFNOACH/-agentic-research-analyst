@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="Agentic Research Analyst" width="100%">
+  <img src="./assets/banner.svg" width="100%">
 </p>
 
 <p align="center">
@@ -51,7 +51,7 @@ It doesn't just call an LLM. It **reasons, plans, acts, observes, and iterates**
 <h2 id="architecture">⛓ Architecture</h2>
 
 <p align="center">
-  <img src="assets/architecture.svg" alt="System Architecture" width="90%">
+  <img src="./assets/architecture.svg" width="90%">
 </p>
 
 ```
